@@ -1,0 +1,3 @@
+rootProject.name = 'IgarassuRN'
+
+include ':app'
