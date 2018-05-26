@@ -1,8 +1,11 @@
 //import liraries
 import React, { Component } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import { Answers } from 'react-native-fabric'
 
-// create a component
+Answers.logCustom('Performed a custom event', { bigData: true });
+Answers.logContentView('To-Do Edit', 'To-Do', 'to-do-42', { userId: 93 });
+
 const LoginScreen = () => {
     return (
         <View style={styles.container}>
