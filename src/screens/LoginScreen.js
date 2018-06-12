@@ -9,7 +9,12 @@ Answers.logContentView('To-Do Edit', 'To-Do', 'to-do-42', { userId: 93 });
 const LoginScreen = () => {
     return (
         <View style={styles.container}>
-            <Text>LoginScreen</Text>
+            <View style={styles.containerText}>
+                <Text>Login</Text>
+
+                <Text>Senha</Text>
+                
+            </View>
         </View>
     );
 };
@@ -20,8 +25,14 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#ffffff',
+        backgroundColor: '#ffffff',      
     },
+    containerText: {
+        backgroundColor: '#fff',
+        borderWidth: 2,
+        borderColor: 'steelblue',
+        borderRadius: 20,        
+    },    
 });
 
 //make this component available to the app
